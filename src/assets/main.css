@@ -1,0 +1,14 @@
+@import './base.css';
+
+
+@font-face {
+  font-family: 'NotoSansLao';
+  src: url('../fonts/Noto_Sans_Lao/static/NotoSansLao-Regular.ttf') format('truetype');
+}
+
+#app {
+  transition: 0.5s;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'NotoSansLao', Avenir, Helvetica, Arial, sans-serif;
+}
