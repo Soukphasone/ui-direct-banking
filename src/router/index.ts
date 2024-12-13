@@ -1,23 +1,40 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+// src/router/index.ts
+import {
+  createRouter,
+  createWebHistory,
+  type RouteRecordRaw,
+} from "vue-router";
+import dashboard from "@/views/dashboard.vue";
+import index from "@/views/home/index.vue";
+
+const routes: Array<RouteRecordRaw> = [
+  {
+    path: "/",
+    name: "Dashboard",
+    component: dashboard,
+    children: [
+      {
+        path: "/",
+        name: "Home",
+        component: index,
+      },
+      // {
+      //   path: "/profile",
+      //   name: "Profile",
+      //   component: Profile,
+      // },
+      // {
+      //   path: "/setting",
+      //   name: "Setting",
+      //   component: Setting,
+      // },
+    ],
+  },
+];
 
 const router = createRouter({
-  history: createWebHashHistory(),
-  routes: [
-    {
-      path: '/',
-      name: 'index',
-      component: () => import('@/views/home/index.vue'),
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/about/about.vue')
-    }
-  ]
-})
+  history: createWebHistory(),
+  routes,
+});
 
-router.beforeEach((to, from) => {
-  return true
-})
-
-export default router
+export default router;

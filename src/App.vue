@@ -1,8 +1,4 @@
 <template>
-  <!-- <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav> -->
   <RouterView />
 </template>
 
@@ -12,9 +8,10 @@
 
 <style>
 @font-face {
-  font-family: 'NotoSansLao';
+  font-family: "NotoSansLao";
   /* src: url('../fonts/Noto_Sans_Lao/static/NotoSansLao-Regular.ttf') format('truetype'); */
-  src: url('./fonts//Noto_Sans_Lao/static/NotoSansLao-Regular.ttf') format('truetype');
+  src: url("./fonts//Noto_Sans_Lao/static/NotoSansLao-Regular.ttf")
+    format("truetype");
 }
 
 p,
@@ -23,6 +20,6 @@ h3,
 span,
 div {
   margin: 0px;
-  font-family: 'NotoSansLao', Avenir, Helvetica, Arial, sans-serif;
+  font-family: "NotoSansLao", Avenir, Helvetica, Arial, sans-serif;
 }
 </style>

@@ -1,6 +1,5 @@
 @import './base.css';
 
-
 @font-face {
   font-family: 'NotoSansLao';
   src: url('../fonts/Noto_Sans_Lao/static/NotoSansLao-Regular.ttf') format('truetype');
@@ -12,3 +11,6 @@
   padding: 0px;
   font-family: 'NotoSansLao', Avenir, Helvetica, Arial, sans-serif;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
