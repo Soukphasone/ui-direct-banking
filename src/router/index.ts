@@ -1,9 +1,5 @@
 // src/router/index.ts
-import {
-  createRouter,
-  createWebHistory,
-  type RouteRecordRaw,
-} from "vue-router";
+import { createRouter, createWebHistory, type RouteRecordRaw } from "vue-router";
 import dashboard from "@/views/dashboard.vue";
 import index from "@/views/home/index.vue";
 
