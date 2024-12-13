@@ -14,20 +14,10 @@ const routes: Array<RouteRecordRaw> = [
     component: dashboard,
     children: [
       {
-        path: "/",
+        path: "",
         name: "Home",
         component: index,
       },
-      // {
-      //   path: "/profile",
-      //   name: "Profile",
-      //   component: Profile,
-      // },
-      // {
-      //   path: "/setting",
-      //   name: "Setting",
-      //   component: Setting,
-      // },
     ],
   },
 ];
