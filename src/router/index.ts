@@ -1,18 +1,15 @@
 // src/router/index.ts
 import { createRouter, createWebHistory, type RouteRecordRaw } from "vue-router";
-import dashboard from "@/views/dashboard.vue";
-import index from "@/views/home/index.vue";
-
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "Dashboard",
-    component: dashboard,
+    component: () => import("@/views/dashboard.vue"),
     children: [
       {
         path: "",
         name: "Home",
-        component: index,
+        component: () => import("@/views/home/index.vue"),
       },
     ],
   },
